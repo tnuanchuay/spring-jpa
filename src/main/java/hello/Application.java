@@ -11,10 +11,10 @@ import org.springframework.web.bind.annotation.RestController;
 public class Application {
 
     @Autowired
-    private TeamRepository teamRepository;
+    private SaleRepository teamRepository;
 
     @RequestMapping("/")
-    public Iterable<Team> Home(){
+    public Iterable<Sale> Home(){
         return teamRepository.findAll();
     }
 
